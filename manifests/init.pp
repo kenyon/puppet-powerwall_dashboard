@@ -10,4 +10,6 @@ class powerwall_dashboard {
   Class['powerwall_dashboard::install']
   -> Class['powerwall_dashboard::config']
   ~> Class['powerwall_dashboard::service']
+
+  include influxdb
 }
